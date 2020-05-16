@@ -41,9 +41,8 @@ __main	PROC
 	STR r1, [r0, #GPIO_OTYPER]
 	
 	
-	; Configure output pins: we are using pins PE10, PE11, PE12, PE13
-	
 	; Configure GPIOA as input
+	
 	LDR r0, =GPIOA_BASE
 	LDR r1, [r0, #GPIO_MODER]
 	LDR r2, =0x00000CFC
